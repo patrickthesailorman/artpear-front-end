@@ -7,7 +7,8 @@ var app = angular.module('aRtIseek', []);
 
 app.controller('MainCtrl', [
   '$scope',
-  function($scope){
+  'posts',
+  function($scope, posts){
     $scope.posts = [
       {title:'post 1', upvotes: 5},
       {title:'post 2', upvotes: 4},
@@ -20,7 +21,8 @@ $scope.addPost = function(){
   $scope.posts.push({
     title: $scope.title,
     link: $scope.link,
-    upvotes: 0});
+    upvotes: 0
+  });
   $scope.title = '';
   $scope.link = '';
 };
@@ -29,3 +31,10 @@ $scope.incrementUpvotes = function(post) {
 };
   }
 ]);
+
+  app.factory('posts', [function(){
+    var o = {
+      posts: []
+    };
+    return o;
+  }]);

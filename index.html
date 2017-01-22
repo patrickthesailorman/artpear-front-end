@@ -3,28 +3,51 @@
   <head>
     <meta charset="utf-8">
     <title>aRtIseek</title>
+    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
     <script src="app.js"></script>
-
+    <style> .glyphicon-thumbs-up { cursor:pointer } </style>
   </head>
   <body ng-app="aRtIseek" ng-controller="MainCtrl">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+
+        <div class="page-header">
+          <h1>aRtIseek</h1>
+        </div>
+
     <div ng-repeat="post in posts | orderBy: '-upvotes'">
-      <span ng-click="incrementUpvtes(post)">^</span>
-      <a ng-show="post.link" href="{{post.link}}">"
-      {{post.title}}
-    </a>
-    <span ng-hide="post.link">
-      {{post.title}}
-    </span>
-      - upvotes {{post.upvotes}}
+      <span class="glyphicon glyphicon-thumbs-up"
+      ng-click="incrementUpvtes(post)">^</span>
+      {{post.upvotes}}
+      <span style="font-size:20px; margin-left: 10px;">
+        <a ng-show="post.link" href="{{post.link}}">"
+          {{post.title}}
+        </a>
+        <span ng-hide="post.link">
+          {{post.title}}
+        </span>
+      </span>
     </div>
-    <form ng-submit="addPost()">
-      <input type="text" placeholder="Title" ng-model="title"></input>
-      <br>
-      <input type="text" placeholder="Link" ng-model="link"></input>
+
+    <form ng-submit="addPost()"
+      style="margin-top:30px;">
+      <h3>Add a New Post</h3>
+
+      <div class="form-group">
+      <input type="text"
+      class="form-control"
+      placeholder="Title"
+      ng-model="title"></input>
+    </div>
+    <div class="form-group">
+      <input type="text"
+      class="form-control"
+      placeholder="Link"
+       ng-model="link"></input>
       <br>
 
-      <button type="submit">Post</button>
+      <button type="submit" class="btn btn-primary">Post</button>
     </form>
   </body>
 </html>
