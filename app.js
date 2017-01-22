@@ -1,10 +1,23 @@
 (function(){
   angular
-  .module('aRtIseek',[])
+  .module('aRtIseek',['ui.router'])
 })();
 
 var app = angular.module('aRtIseek', []);
 
+app.config([
+  '$stateProvider',
+  '$urlRouterProvider',
+  function($stateProvider, $urlRouterProvider) {
+
+    $stateProvider
+    .state('home', {
+      url: '/home',
+      templateUrl: '/home.html'
+      controller: 'MainCtrl'
+    });
+    $urlRouterProvider.otherwise('home');
+  }]);
 app.controller('MainCtrl', [
   '$scope',
   'posts',
