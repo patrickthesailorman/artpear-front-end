@@ -1,9 +1,9 @@
 (function(){
   angular
-  .module('aRtIseek',['ui.router'])
+  .module('artpear',['ui.router'])
 })();
 
-var app = angular.module('aRtIseek', []);
+var app = angular.module('artpear', []);
 
 app.config([
   '$stateProvider',
