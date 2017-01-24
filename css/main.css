@@ -1,0 +1,15 @@
+.nav-logo{
+  height:80px;
+  margin-top:15px;
+}
+nav{
+  height:100px;
+  line-height: 100px;
+}
+.navbar-fixed{
+  height:110px;
+}
+.med-pear{
+  height: 100px;
+  display: inline;
+}
