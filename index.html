@@ -18,12 +18,12 @@
   <body data-ng-app="artpear">  <!-- ng-controller="MainCtrl"> -->
     <!-- ******* NAV BAR *********-->
       <div class="navbar-fixed ">
-        <nav class=" indigo darken-3 ">
+        <nav class=" indigo">
           <div class="nav-wrapper container">
             <a href="#" class="brand-logo"><img class="nav-logo" src="images/artpear-logo.svg" alt="art pear logo"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a href="#">Find Artists</a></li>
-              <li><a href="#">Find Events</a></li>
+              <li><a href="events.html">Find Events</a></li>
               <li><a href="#">About</a></li>
               <li><a class="waves-effect waves-light btn" href="#modal1">Sign In</a></li>
             </ul>
@@ -49,45 +49,88 @@
     </div> <!--- //////// END MODAL STRUCTURE ///////// -->
 
     <!-- *********  HERO AREA  ************ -->
-    <div class="container row">
-      <div class="card col s6 m6 l6 center">
-        <div class="card-container">
-          <h2>Find an Artist</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <button class="btn">Find an Artist</button>
-        </div>
-      </div>
+  <main>
 
-      <div class="card col s6 m6 l6 center">
-        <div class="card-container">
-          <h2>Find an Event</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-          <button class="btn">Find an Event</button>
+    <div class="row hero">
+      <div class="container">
+      <!-- Find Artist -->
+        <div class="card col s12 m5 l5 center  hero-block">
+          <div class="card-container">
+            <h2>Find an Artist</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button class="hero-button">Find an Artist</button>
+          </div>
+        </div><!-- END Find Artist -->
+
+        <!-- I don't want to use this but for prototyping it woks to space the two buttons -->
+        <div class="col s0 m2 l2">
         </div>
-      </div><!-- //////////// END HERO AREA ////////////-->
+
+        <!-- Find Event -->
+        <div class="card col s12 m5 l5 center  hero-block">
+          <div class="card-container">
+            <h2>Find an Event</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+            <button class=" hero-button">Find an Event</button>
+          </div>
+        </div><!-- END Find Event -->
+
+      </div>
+    </div><!-- //////////// END HERO AREA ////////////-->
 
     <!-- *********   DESCRIPTION AREA????     **********-->
-    </div>
     <div class="container row">
       <div class="card col s4 m4 l4">
         <div class="card-content">
-          <h3> More Info</h3>
+          <img class="med-pear col s4" src="images/atrpear-Pear.svg" alt="Pear">
+          <h3 class="col s8"> More Info</h3>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
       <div class="card col s4 m4 l4">
         <div class="card-content">
-          <h3> More Info</h3>
+          <img class="med-pear col s4" src="images/atrpear-Pear.svg" alt="Pear">
+          <h3 class="col s8"> More Info</h3>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
       <div class="card col s4 m4 l4">
         <div class="card-content">
-          <h3> More Info</h3>
+          <img class="med-pear col s4" src="images/atrpear-Pear.svg" alt="Pear">
+          <h3 class="col s8"> More Info</h3>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
     </div> <!-- //////////// END DESCRIPTION AREA /////////-->
+
+  </main>
+  <!-- ******* FOOOTER BEGINS ****** -->
+    <footer class="page-footer indigo">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+<!--- THIS IS STOCK FROM MATERIALIZE AND NEEDS TO GET UPDATED -->
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2017 Copyright Artpear
+            <a class="grey-text text-lighten-4 right" href="https://github.com/patrickthesailorman/artpear-front-end">Find out more about this project on gitHub</a>
+            </div>
+          </div>
+        </footer><!--- //////// END OF FOOTER ///// -->
 
   </body>
 </html>
