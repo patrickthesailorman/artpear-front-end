@@ -1,0 +1,4 @@
+(fuunction(){
+  angular.module("ArtPear", [])
+
+})();
