@@ -86,7 +86,7 @@
             $scope.reset = function(){
                $scope.firstName = "Buddy";
                $scope.lastName = "Cianci";
-               
+
                $scope.email = "makeArtWithBuddy@example.com";
             }
 
@@ -96,3 +96,21 @@
 
    </body>
 </html>
+
+-----------------------------------------------------
+<input name = "firstname" type = "text" ng-model = "firstName" required>
+<input name = "lastname" type = "text" ng-model = "lastName" required>
+<input name = "email" type = "email" ng-model = "email" required>
+<button ng-click = "reset()">Reset</button>
+
+<script>
+   function studentController($scope) {
+      $scope.reset = function(){
+         $scope.firstName = "Buddy";
+         $scope.lastName = "Cianci";
+         $scope.email = "makeArtWithBuddy@example.com.com";
+      }
+
+      $scope.reset();
+   }
+</script>
