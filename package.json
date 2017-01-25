@@ -1,27 +1,31 @@
 {
-  "name": "artpear",
+  "name": "artpear-front-end",
   "version": "1.0.0",
-  "description": "A web app to pair artists with events",
+  "description": "A service to pair artists and events",
   "main": "app.js",
-  "dependencies": {},
-  "devDependencies": {
-    
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-css": "node-sass --include-path scss scss/main.scss   public/css/main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/patrickthesailorman/artpear-front-end.git"
   },
-  "keywords": [
-    "art",
-    "pear"
-  ],
-  "author": "Team ArtPear",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/patrickthesailorman/artpear-front-end/issues"
   },
-  "homepage": "https://github.com/patrickthesailorman/artpear-front-end#readme"
+  "homepage": "https://github.com/patrickthesailorman/artpear-front-end#readme",
+  "dependencies": {
+    "angular": "^1.6.1",
+    "angular-animate": "^1.6.1",
+    "angular-aria": "^1.6.1",
+    "angular-material": "^1.1.1"
+  },
+  "devDependencies": {
+    "node-sass": "^4.3.0",
+    "nodemon": "^1.11.0"
+  }
 }

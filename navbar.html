@@ -5,24 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
-  
-</head>
-<body>
-  <div ng-controller="AppCtrl" ng-cloak>
-    <md-content class="md-padding">
-      <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
-        <md-nav-item md-nav-click="goto('page1')" name="page1">Page One</md-nav-item>
-        <md-nav-item md-nav-click="goto('page2')" name="page2">Page Two</md-nav-item>
-        <md-nav-item md-nav-click="goto('page3')" name="page3">Page Three</md-nav-item>
-        <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
-        <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
-        <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
-        -->
-      </md-nav-bar>
-      <div class="ext-content">
-        External content for `<span>{{currentNavItem}}</span>`
-      </div>
-    </md-content>
+  <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
 
+</head>
+<body ng-app="BlankApp" ng-cloak>
+
+  <md-nav-bar md-selected-nav-item="currentNavItem">
+    <md-nav-item md-nav-click="goto('page1')" name="page1">Page One</md-nav-item>
+    <md-nav-item md-nav-sref="app.page2" name="page2">Page Two</md-nav-item>
+    <md-nav-item md-nav-href="#page3" name="page3">Page Three</md-nav-item>
+  </md-nav-bar>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+<!-- Angular Material requires Angular.js Libraries -->
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+
+ <!-- Angular Material Library -->
+ <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+
+ <script src="navbar.js"></script>
 </body>
 </html>

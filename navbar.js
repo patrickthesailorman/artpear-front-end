@@ -1,10 +1,6 @@
 (function() {
-  'use strict';
-
-  angular.module('navBarDemoBasicUsage', ['ngMaterial'])
-      .controller('AppCtrl', AppCtrl);
-
-  function AppCtrl($scope) {
-    $scope.currentNavItem = 'page1';
-  }
-})();
+  // ‘use strict’;
+   $rootScope.$on('$routeChangeSuccess', function(event, current) {
+     $scope.currentLink = getCurrentLinkFromRoute(current);
+   });
+});
