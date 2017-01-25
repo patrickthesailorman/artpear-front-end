@@ -4,23 +4,24 @@
     <meta charset="utf-8">
     <title>aRtIseek</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="public/css/main.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-    </script>
-    <!-- Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js">
-    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
 
-    <script src="scripts/script.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/components/artist/artistController.js"></script>
+
 
   </head>
-  <body data-ng-app="artpear">  <!-- ng-controller="MainCtrl"> -->
+  <body  data-ng-app="artPear" >
+  <div data-ng-controller="artistController as vm">
+
+
     <!-- ******* NAV BAR *********-->
       <div class="navbar-fixed ">
         <nav class=" indigo">
           <div class="nav-wrapper container">
-            <a href="#" class="brand-logo"><img class="nav-logo" src="images/artpear-logo.svg" alt="art pear logo"></a>
+            <a href="#" class="brand-logo"><img class="nav-logo" src="public/img/artpear-logo.svg" alt="art pear logo"></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a href="#">Find Artists</a></li>
               <li><a href="events.html">Find Events</a></li>
@@ -35,7 +36,7 @@
     <div class="content row">
       <div id="modal1" class="modal">
         <div class="modal-content col s12 m12 l12 center">
-          <img class="med-pear" src="images/atrpear-Pear.svg" alt="Pear">
+          <img class="med-pear" src="public/img/atrpear-Pear.svg" alt="Pear">
           <h4>Sign Up / Sign In</h4>
           <!-- add form action and make this change fom log in to sign up as needed -->
           <form action="##">
@@ -82,21 +83,21 @@
     <div class="container row">
       <div class="card col s4 m4 l4">
         <div class="card-content">
-          <img class="med-pear col s4" src="images/atrpear-Pear.svg" alt="Pear">
+          <img class="med-pear col s4" src="public/img/atrpear-Pear.svg" alt="Pear">
           <h3 class="col s8"> More Info</h3>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
       <div class="card col s4 m4 l4">
         <div class="card-content">
-          <img class="med-pear col s4" src="images/atrpear-Pear.svg" alt="Pear">
+          <img class="med-pear col s4" src="public/img/atrpear-Pear.svg" alt="Pear">
           <h3 class="col s8"> More Info</h3>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
       </div>
       <div class="card col s4 m4 l4">
         <div class="card-content">
-          <img class="med-pear col s4" src="images/atrpear-Pear.svg" alt="Pear">
+          <img class="med-pear col s4" src="public/img/atrpear-Pear.svg" alt="Pear">
           <h3 class="col s8"> More Info</h3>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
@@ -131,6 +132,6 @@
             </div>
           </div>
         </footer><!--- //////// END OF FOOTER ///// -->
-
+  </div>
   </body>
 </html>
