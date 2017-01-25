@@ -2,7 +2,6 @@
 
     angular
         .module('artPear', [
-          // "ui.router",
-          // "ngResource"
+          'ngMaterial'
         ]);
 })();

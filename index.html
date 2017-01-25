@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>aRtIseek</title>
+    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+    <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+
     <link rel="stylesheet" href="public/css/main.css">
 
     <!-- Angular Material requires Angular.js Libraries -->
@@ -11,36 +14,39 @@
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+  <!-- Compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
 
   <!-- Angular Material Library -->
   <script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
 
+<!-- ANGULAR CONTROLERS -->
     <script src="app/app.module.js"></script>
-    <script src="app/components/artist/artistController.js"></script>
-
+    <script src="app/app.controller.js"></script>
+    <!-- <script src="app/components/artist/artistController.js"></script> -->
 
   </head>
-  <body  data-ng-app="artPear" >
-  <div data-ng-controller="artistController as vm">
+  <body  data-ng-app="artPear"  ng-cloak>
+    <div data-ng-controller="mainController as mainVm">
 
     <!-- ****** ANGULAR MATERIAL NAVBAR ***** -->
-    <md-content class="md-padding">
-    <md-nav-bar md-selected-nav-item="currentNavItem" nav-bar-aria-label="navigation links">
-      <md-nav-item md-nav-click="goto('page1')" name="page1">Page One</md-nav-item>
-      <md-nav-item md-nav-click="goto('page2')" name="page2">Page Two</md-nav-item>
-      <md-nav-item md-nav-click="goto('page3')" name="page3">Page Three</md-nav-item>
-      <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
-      <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
-      <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
-      -->
-    </md-nav-bar>
-    <div class="ext-content">
-      External content for `<span>{{currentNavItem}}</span>`
-    </div>
-  </md-content>
+    <!-- <md-toolbar>
+      <div class="md-toolbar-tools">
+        <a  href="#"><img class="nav-logo" src="public/img/artpear-logo.svg" alt=""></a>
+        <span flex></span>
+        <md-button class="md-flat" aria-label="Find Artist">Find An Artist</md-button>
+        <md-button class="md-flat" aria-label="Find Events">Find Event</md-button>
+        <md-button class="md-raised" aria-label="Sign In">
+          Sign In
+        </md-button>
+      </div>
+    </md-toolbar> -->
   <!-- ////// END MATERILA NAV ////-->
+
+
     <!-- ******* NAV BAR *********-->
-      <!-- <div class="navbar-fixed ">
+      <div class="navbar-fixed">
         <nav class=" indigo">
           <div class="nav-wrapper container">
             <a href="#" class="brand-logo"><img class="nav-logo" src="public/img/artpear-logo.svg" alt="art pear logo"></a>
@@ -52,9 +58,12 @@
             </ul>
           </div>
         </nav>
-      </div>  -->
+      </div>
       <!-- ///////// END NAV BAR /////////-->
 
+
+    <!-- *********  HERO AREA  ************ -->
+  <main>
     <!-- ********* Modal Structure ********* -->
     <div class="content row">
       <div id="modal1" class="modal">
@@ -71,9 +80,6 @@
         </div>
       </div>
     </div> <!--- //////// END MODAL STRUCTURE ///////// -->
-
-    <!-- *********  HERO AREA  ************ -->
-  <main>
 
     <div class="row hero">
       <div class="container">
