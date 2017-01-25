@@ -1,9 +1,7 @@
-body {
-  margin: 0;
-  background-color: #bada55; }
-
-.testing {
-  color: #bada55; }
+.navBardemoBasicUsage md-content .ext-content {
+  padding: 50px;
+  margin: 20px;
+  background-color: #FFF2E0; }
 
 .nav-logo {
   height: 80px;
