@@ -2,6 +2,7 @@
     angular
     .module('artPearApp', [
       'ngResource',
+      'ngRoute',
       'ui.router',
       'artists'
     ])

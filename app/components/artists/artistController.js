@@ -5,15 +5,13 @@
         .module('artists', [])
         .controller('artistCntrl', artistCntrl);
 
-    artistCntrl.$inject = ['$http','$scope'];
-    var rootURL = "https://artpear-api.herokuapp.com/api"
+    artistCntrl.$inject = ['$http','$scope', 'API_URL'];
+    // var rootURL = "https://artpear-api.herokuapp.com/api"
     /* @ngInject */
-    function artistCntrl($http,$scope) {
-        var vm = this;
-
+    function artistCntrl($http,$scope,API_URL) {
         // **** INDEX
        $scope.getArtist = function(){
-          $http.get(`${rootURL}/artists`)
+          $http.get(`${API_URL}artists`)
             .then(function(res){
               $scope.artists = res.data;
               console.log($scope.artists);
@@ -22,10 +20,10 @@
               if(err)console.log(err);
             });
         }
-        $scope.getArtist();
+        // $scope.getArtist();
         /// **** Show
         $scope.showArtist = function(id){
-          $http.get(`${rootURL}/artists/${id}`)
+          $http.get(`${API_URL}artists/${id}`)
             .then(function(res){
               $scope.artists = res.data;
               console.log($scope.artists);
@@ -37,7 +35,7 @@
 
         // **** New
         $scope.createArtist = function(artist){
-          $http.post(`${rootURL}/artists`, artist)
+          $http.post(`${API_URL}artists`, artist)
             .then(function(res){
               console.log(res.data);
             })
@@ -48,7 +46,7 @@
 
         /// ****** Edit
         $scope.editArtist = function(artist){
-          $http.put(`${rootURL}/artists/${$scope.artist.id}`, artist)
+          $http.put(`${API_URL}artists/${$scope.artist.id}`, artist)
             .then(function(res){
               // $scope.getGrumbles(); //REdirect to Index
               $scope.artist = res.data;
