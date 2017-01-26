@@ -30,11 +30,10 @@
    }
   //  **** New
      $scope.createArtist = function(artist){
-       $scope.artist.kind = "Artist";
-       $http.post(`https://artpear-api.herokuapp.com/api/artists`, $scope.artist)
+       console.log(artist);
+       $http.post(`https://artpear-api.herokuapp.com/api/artists/`, artist)
          .then(function(res){
-
-           console.log('SENT');
+           console.log('res.data');
          })
          .catch(function(err){
            if(err)console.log(err);

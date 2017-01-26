@@ -18,12 +18,11 @@
         <p >{{artist}}</p>
     </div>
 
-  <form>
+  <form ng-submit="artist.createArtist(artist)">
     <input type="text" placeholder="First Name" ng-model="artist.firstName"><br/>
     <input type="text" placeholder="Last Name" ng-model="artist.lastName"><br/>
     <input type="email" placeholder="Email" ng-model="artist.email"><br/>
-    <!-- <input type="hidden" ng-model="artist.kind" value='Artist'> -->
-    <input type="submit" nc-click="createArtist(artist)">
+    <button type="submit">Submit</button>
   </form>
 
   <script src="/app/app.module.js"></script>
