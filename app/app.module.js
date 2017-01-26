@@ -2,6 +2,8 @@
 
     angular
         .module('artPear', [
-          'ngMaterial'
+          'ui.router',
+          'ngResource',
+          'opportunity'
         ]);
 })();

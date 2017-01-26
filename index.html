@@ -23,12 +23,25 @@
 
 <!-- ANGULAR CONTROLERS -->
     <script src="app/app.module.js"></script>
+    <script src="js/seeker.factory.js"></script>
+    <script src="js/opportunity.factory.js"></script>
     <script src="app/app.controller.js"></script>
+    <script src="app/seekerController.js"></script>
+    <script src="app/opportunityController.js"></script>
+
     <!-- <script src="app/components/artist/artistController.js"></script> -->
 
   </head>
   <body  data-ng-app="artPear"  ng-cloak>
     <div data-ng-controller="mainController as mainVm">
+
+
+      <div ng-controller="seekerCtrl as vm"></div>
+      <div ng-controller="opportunityCtrl as vm"></div>
+        <button ng-click="getOpportunities()">Get Opportunities</button>
+          <div opportunity-index></div>
+          <opportunity-show></opportunity-show>
+        </div>div
 
     <!-- ****** ANGULAR MATERIAL NAVBAR ***** -->
     <!-- <md-toolbar>
