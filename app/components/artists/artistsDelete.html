@@ -1,3 +1,8 @@
-<form data-ng-submit="deleteArtist()">
-  <input type="submit" value="Delete" />
-</form>
+<div class="row form-size">
+  <div class="center">
+    <form class="nav-adjust"data-ng-submit="deleteArtist()">
+      <div data-ng-include="'/app/components/opportunities/_form.html'"></div>
+      <input type="submit" value="Delete" />
+    </form>
+  </div>
+</div>

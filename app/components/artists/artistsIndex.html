@@ -1,3 +1,11 @@
-<div >
-    <p ng-repeat="artist in artists">{{artist}}</p>
+<div ng-repeat="artist in artists">
+  <div class="row profile ">
+
+  <div class="card col s12 m8 l8">
+    <div class="card-content">
+        <img class="profile-pear"src="app/public/img/artPear-Pear.svg">
+        <h2 class="">{{artist.firstName}}  {{artist.lastName}}</h2>
+        <p class="description">{{artist.bio}}</p>
+    </div>
+</div>
 </div>
