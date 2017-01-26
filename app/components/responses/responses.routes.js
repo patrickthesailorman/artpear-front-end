@@ -10,10 +10,10 @@
           templateUrl : '/app/components/responses/responsesIndex.html',
           controller  : 'responsesIndexCtrl'
         })
-        .state('responsesRegister', {
-          url: '/responses/register',
-          templateUrl : '/app/components/responses/responsesRegister.html',
-          controller  : 'responsesRegisterCtrl'
+        .state('responsesCreate', {
+          url: '/responses/create',
+          templateUrl : '/app/components/responses/responsesCreate.html',
+          controller  : 'responsesCreateCtrl'
         })
         .state('responsesShow', {
           url: '/responses/:id',

@@ -5,7 +5,7 @@
         .module('responses')
         .controller('responsesIndexCtrl', responsesIndexCtrl)
         .controller('responsesShowCtrl', responsesShowCtrl)
-        .controller('responsesRegisterCtrl', responsesRegisterCtrl)
+        .controller('responsesCreateCtrl', responsesCreateCtrl)
         .controller('responsesEditCtrl', responsesEditCtrl)
         .controller('responsesDeleteCtrl', responsesDeleteCtrl);
 
