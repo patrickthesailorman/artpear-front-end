@@ -1,0 +1,100 @@
+.navBardemoBasicUsage md-content .ext-content {
+  padding: 50px;
+  margin: 20px;
+  background-color: #FFF2E0; }
+
+.nav-logo {
+  height: 80px;
+  margin-top: 5px;
+  }
+
+.nav {
+  height: 100px;
+  line-height: 100px; }
+
+.navbar-fixed {
+  height: 80px; }
+
+.med-pear {
+  height: 100px;
+  display: inline; }
+
+.hero {
+  height: 500px;
+  background-color: teal;
+  padding-top: 50px; }
+
+.hero-block {
+  /*height: 300px;*/
+  padding: 20px; }
+
+.hero-button {
+width: 100%;
+margin-bottom: 20px;
+padding: 50px;
+background-color: teal;
+text-transform: uppercase;
+color: white;
+border-radius: 4px;
+border: none;
+box-shadow: 1px 1px #333; }
+
+.hero-button:hover {
+  background-color: blue; }
+
+.tag-list {
+  margin: 10px;
+  margin-bottom: 20px; }
+
+.tags {
+  float: left;
+  margin: 5px;
+  padding: 10px;
+  background-color: #999;
+  text-transform: uppercase;
+  color: white; }
+
+.event-item {
+  /*background-color: blue;*/
+  /*padding: 50px;*/
+  height: 250px; }
+
+.event-list-text {
+  padding-bottom: 100px; }
+
+  .event-button {
+    height: 13em;
+    margin-bottom: 20px;
+    padding: 50px;
+    background-color: teal;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 3px;
+    border: none;
+    box-shadow: 1px 1px #333; }
+
+  .event-button:hover {
+    background-color: blue; }
+
+
+.nav-adjust{
+  margin-top:100px;
+  text-align: center;
+  /*background-color: red;*/
+}
+
+.form-size{
+  margin-top: 100px;
+}
+
+.artist-profile{
+  margin-left: 100px;
+}
+
+.profile-pear{
+  height: 100px;
+}
+
+.description {
+  text-align: left;
+}
