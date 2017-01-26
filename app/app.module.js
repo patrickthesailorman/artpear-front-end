@@ -4,9 +4,8 @@
       'ngResource',
       'ui.router',
       'artists',
-      'responses'
-      'artists'
-      // 'seekers'
+      'responses',
+      'seekers',
       'opportunities'
     ])
     .constant('API_URL', 'https://artpear-api.herokuapp.com/api/');

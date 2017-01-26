@@ -1,6 +1,6 @@
 (function() {
     angular
-      .module('artists', [
+      .module('seekers', [
         'ngResource',
         'ui.router'
       ]);
