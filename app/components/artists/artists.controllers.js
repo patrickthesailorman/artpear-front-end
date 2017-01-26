@@ -5,7 +5,9 @@
         .module('artists')
         .controller('artistsIndexCtrl', artistsIndexCtrl)
         .controller('artistsShowCtrl', artistsShowCtrl)
-        .controller('artistsRegisterCtrl', artistsRegisterCtrl);
+        .controller('artistsRegisterCtrl', artistsRegisterCtrl)
+        .controller('artistsEditCtrl', artistsEditCtrl)
+        .controller('artistsDeleteCtrl', artistsDeleteCtrl);
 
         function artistsIndexCtrl($scope, ArtistsFactory){
           $scope.artists = ArtistsFactory.query();
@@ -22,5 +24,33 @@
               $state.go('artistsShow', {id: $scope.artist._id});
             });
           };
+        }
+
+        function artistsEditCtrl($scope, $state, $stateParams, ArtistsFactory){
+          $scope.updateArtist = function() {
+            $scope.artist.$update(function() {
+              $state.go('artistsShow', {id: $scope.artist._id});
+            });
+          };
+
+          $scope.loadArtist = function() {
+            $scope.artist = ArtistsFactory.get({id: $stateParams.id});
+          };
+
+          $scope.loadArtist();
+        }
+
+        function artistsDeleteCtrl($scope, $state, $stateParams, ArtistsFactory){
+          $scope.deleteArtist = function() {
+            $scope.artist.$delete(function() {
+              $state.go('artistsIndex');
+            });
+          };
+
+          $scope.loadArtist = function() {
+            $scope.artist = ArtistsFactory.get({id: $stateParams.id});
+          };
+
+          $scope.loadArtist();
         }
 })();
