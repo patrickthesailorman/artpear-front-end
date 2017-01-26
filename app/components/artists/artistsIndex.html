@@ -1,11 +1,12 @@
-<div ng-repeat="artist in artists">
-  <div class="row profile ">
-
-  <div class="card col s12 m8 l8">
-    <div class="card-content">
-        <img class="profile-pear"src="app/public/img/artPear-Pear.svg">
-        <h2 class="">{{artist.firstName}}  {{artist.lastName}}</h2>
-        <p class="description">{{artist.bio}}</p>
+<div class="nav-adjust ">
+    <div class=" profile "  ng-repeat="artist in artists">
+      <div class="card min-height">
+        <div class="row">
+          <img class="profile-pear left col s2 m4 l4"src="app/public/img/artPear-Pear.svg">
+          <h3 class="left col s8">{{artist.firstName}}  {{artist.lastName}}</h3>
+          <br/>
+          <p class="description left col s8">{{artist.bio}}</p>
+        </div>
+      </div>
     </div>
-</div>
 </div>
