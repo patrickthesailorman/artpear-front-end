@@ -11,8 +11,11 @@
       <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.js"></script>
 
   </head>
-  <body ng-controller="artistCntrl">
-    <!-- <div ng-view></div> -->
+  <body>
+    <div ng-controller="artistCntrl">
+
+      <h2>Artist</h2>
+    <ui-view></ui-view>
   <!-- <body ng-controller="ArtistCntrl"> -->
   <button ng-click="getArtist()">Get the Artists</button>
     <div ng-repeat="artist in artists">
@@ -20,20 +23,49 @@
         <p >{{artist}}</p>
     </div>
 
-  <form ng-submit="createArtist(artist)">
-    <input type="text" placeholder="First Name" ng-model="artist.firstName"><br/>
+  <form ng-submit="createArtist(artist)" no-validate>
+    <input name="firstName" type="text" placeholder="First Name"  ng-model="artist.firstName"><br/>
     <input type="text" placeholder="Last Name" ng-model="artist.lastName"><br/>
     <input type="email" placeholder="Email" ng-model="artist.email"><br/>
+    <input type="password" placeholder="Password" ng-model="artist.password"><br/>
     <button type="submit">Submit</button>
   </form>
 
-  <script src="/app/app.module.js"></script>
-  <script src="app/app.services.js"></script>
-  <!-- <script src="/app/app.controller.js"></script> -->
+</div>
+<div  ng-controller="seekerCntrl">
+  <hr/>
+  <h2>Seeker</h2>
+<button ng-click="getSeeker()">Get the Seeker</button>
+  <div ng-repeat="seeker in seekers">
+      <a ng-click="showSeeker(seeker._id)">{{seeker.firstName}}</a>
+      <p >{{seeker}}</p>
+  </div>
 
+  <form ng-submit="createSeeker(seeker)" no-validate>
+    <input name="firstName" type="text" placeholder="First Name"  ng-model="seeker.firstName"><br/>
+    <input type="text" placeholder="Last Name" ng-model="seeker.lastName"><br/>
+    <input type="email" placeholder="Email" ng-model="seeker.email"><br/>
+    <input type="password" placeholder="Password" ng-model="seeker.password"><br/>
+    <button type="submit">Submit</button>
+  </form>
+
+
+</div>
+
+  <!-- Main components -->
+  <script src="/app/app.module.js"></script>
+  <!-- <script src="app/app.services.js"></script> -->
+
+  <!-- Artist Components -->
   <script src="app/components/artists/artist.module.js"></script>
   <script src="app/components/artists/artistController.js"></script>
   <script src="app/components/artists/atrist.routes.js"></script>
+
+  <!-- Seeker Components -->
+  <script src="app/components/seeker/seeker.module.js"></script>
+  <script src="app/components/seeker/seeker.Controller.js"></script>
+  <script src="app/components/seeker/seeker.routes.js"></script>
+
 
   </body>
   </html>
