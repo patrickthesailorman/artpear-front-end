@@ -8,7 +8,7 @@
     artistCntrl.$inject = ['$http','$scope'];
     var rootURL = "https://artpear-api.herokuapp.com/api"
     /* @ngInject */
-    function artistControllerFunction($http,$scope) {
+    function artistCntrl($http,$scope) {
         var vm = this;
 
         // **** INDEX

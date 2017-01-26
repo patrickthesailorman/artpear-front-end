@@ -3,13 +3,13 @@
   .module('artPearApp')
   .controller('ArtistCntrl', ArtistCntrl)
 
-  ArtistCntrl.$inject = ['$http', '$scope'];
-  var rootURL = "https://artpear-api.herokuapp.com/api";
+  ArtistCntrl.$inject = ['$http', '$scope','API_URL'];
+  // var rootURL = "https://artpear-api.herokuapp.com/api/";
 
-  function ArtistCntrl($http, $scope){
-    console.log(`Working Artist ${rootURL}`);/// This is Working
+  function ArtistCntrl($http, $scope, API_URL){
+    console.log(`Working Artist ${API_URL}`);/// This is Working
     $scope.getArtist = function(){
-      $http.get(`https://artpear-api.herokuapp.com/api/artists`)
+      $http.get(`${API_URL}artists`)
       .then(function(res){
         $scope.artists = res.data;
         console.log($scope.artists);
@@ -19,7 +19,7 @@
        });
     }
     $scope.showArtist = function(id){
-     $http.get(`https://artpear-api.herokuapp.com/api/artists/${id}`)
+     $http.get(`${API_URL}artists/${id}`)
        .then(function(res){
          $scope.artists = res.data;
          console.log($scope.artists);
@@ -31,7 +31,7 @@
   //  **** New
      $scope.createArtist = function(artist){
        console.log(artist);
-       $http.post(`https://artpear-api.herokuapp.com/api/artists/`, artist)
+       $http.post(`h${API_URL}artists/`, artist)
          .then(function(res){
            console.log('res.data');
          })
@@ -41,58 +41,6 @@
      }
   }
 })();
-
-
-// (function() {
-//     angular
-//         .module('artPearApp')
-//         .controller('ArtPearCtlr', ArtPearCtlr);
-//
-//     ArtPearCtlr.$inject = ['$http', '$scope'];
-//     var rootURL = "https://artpear-api.herokuapp.com/api"
-//
-//     function ArtPearCtlr($http, $scope){
-//       $scope.getArtist = function(){
-//          $http.get(`${rootURL}/artists`)
-//            .then(function(res){
-//              $scope.artists = res.data;
-//              console.log($scope.artists);
-//            })
-//            .catch(function(err){
-//              if(err)console.log(err);
-//            });
-//        }
-//        $scope.getArtist();
-//
-//        /// **** Show
-//        $scope.showArtist = function(id){
-//          $http.get(`https://artpear-api.herokuapp.com/api/artists/${id}`)
-//            .then(function(res){
-//              $scope.artists = res.data;
-//              console.log($scope.artists);
-//            })
-//            .catch(function(err){
-//              if(err)console.log(err);
-//            });
-//        }
-//       //  $scope.showArtist("5888fa663ac28b000418f17c");
-//
-//       // **** New
-//       $scope.createArtist = function(artist){
-//         $http.post(`https://artpear-api.herokuapp.com/api/artists`, artist)
-//           .then(function(res){
-//             $scope.
-//             console.log(res.data);
-//           })
-//           .catch(function(err){
-//             if(err)console.log(err);
-//           });
-//       };
-//
-//         console.log("WORKING");
-//     }
-//
-// })();
 // (function(){
 //   angular
 //       .module('artPearApp')
