@@ -19,10 +19,7 @@
   },
   "homepage": "https://github.com/patrickthesailorman/artpear-front-end#readme",
   "dependencies": {
-    "angular": "^1.6.1",
-    "angular-animate": "^1.6.1",
-    "angular-aria": "^1.6.1",
-    "angular-material": "^1.1.1"
+    "ng-resource": "^1.3.2"
   },
   "devDependencies": {
     "node-sass": "^4.3.0",

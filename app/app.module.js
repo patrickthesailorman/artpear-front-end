@@ -1,7 +1,8 @@
 (function() {
-
     angular
-        .module('artPear', [
-          'ngMaterial'
-        ]);
+    .module('artPearApp', [
+      'ngResource',
+      'ui.router'
+    ])
+
 })();
