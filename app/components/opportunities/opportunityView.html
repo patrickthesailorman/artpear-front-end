@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+ <html ng-app="artPear">
+   <head>
+     <meta charset="utf-8">
+     <title>Opportunities</title>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.js"></script>
+     <script src="../../app.module.js" charset="utf-8"></script>
+     <script src="./opportunity.module.js" charset="utf-8"></script>
+     <script src="./opportunityController.js" charset="utf-8"></script>
+     <script src="./opportunityIndex.directive.js" charset="utf-8"></script>
+     <script src="./opportunityShow.directive.js" charset="utf-8"></script>
+     <script src="./opportunityFactory.js" charset="utf-8"></script>
+     <script src="./new.controller.js" charset="utf-8"></script>
+
+   </head>
+   <body>
+     <div ng-controller="opportunityCtrl as main">
+       <h1>Opportunities</h1>
+       <button ng-click="getOpportunities()">Get Opportunities</button>
+
+       <div opportunity-index></div>
+
+       <opportunity-show></opportunity-show>
+     </div>
+     <div ng-controller="newCtrl as new">
+       <button ng-click="new.showOpportunities()">Log Opportunities</button>
+     </div>
+   </body>
+ </html>
