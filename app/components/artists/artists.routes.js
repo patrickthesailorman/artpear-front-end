@@ -24,6 +24,11 @@
           url: '/artists/:id/edit',
           templateUrl : '/app/components/artists/artistsEdit.html',
           controller  : 'artistsEditCtrl'
+        })
+        .state('artistsDelete', {
+          url: '/artists/:id/delete',
+          templateUrl : '/app/components/artists/artistsDelete.html',
+          controller  : 'artistsDeleteCtrl'
         });
     }
 })();
