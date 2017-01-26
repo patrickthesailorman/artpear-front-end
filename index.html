@@ -2,24 +2,52 @@
 <html data-ng-app="artPearApp">
   <head>
     <meta charset="utf-8">
-    <title>ARTPEAR</title>
-    <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
 
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+    <title>Art Pear</title>
+
+
+      <!-- MATERIAL CSS -->
+      <!-- <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css"> -->
+      <!-- LOCAL CSS -->
+      <link rel="stylesheet" href="app/public/css/main.css">
+      <link rel="stylesheet" href="app/public/css/materialize.min.css">
+      <!-- Angular files -->
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0-beta.2/angular-resource.min.js"></script>
-  </head>
-  <body>
-  <div ui-view></div>
-  <!-- <script src="app/app.services.js"></script> -->
-  <!-- Main components -->
-  <script src="/app/app.module.js"></script>
+      <!-- Materialize min -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
 
-  <!-- Artist Components -->
-  <script src="./app/components/artists/artists.module.js"></script>
-  <script src="./app/components/artists/artists.routes.js"></script>
-  <script src="./app/components/artists/artists.controllers.js"></script>
-  <script src="./app/components/artists/artists.factory.js"></script>
+
+  </head>
+    <body>
+      <!-- ******* NAV BAR *********-->
+      <div class="navbar-fixed">
+        <nav class="nav indigo">
+          <div class="nav-wrapper container">
+            <a href="#" class="brand-logo"><img class="nav-logo" src="app/public/img/artPear-Logo.svg" alt="art pear logo"></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#">Find Artists</a></li>
+              <li><a href="events.html">Find Events</a></li>
+              <li><a href="#">About</a></li>
+              <li><a class="waves-effect waves-light btn" href="#modal1">Sign In</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <!-- ///////// END NAV BAR /////////-->
+      <div ui-view></div>
+
+    <!-- script file -->
+    <script src="app/public/js/script.js"></script>
+    <!-- Main components -->
+    <script src="/app/app.module.js"></script>
+    
+     <!-- Artist Components -->
+    <script src="./app/components/artists/artists.module.js"></script>
+    <script src="./app/components/artists/artists.routes.js"></script>
+    <script src="./app/components/artists/artists.controllers.js"></script>
+    <script src="./app/components/artists/artists.factory.js"></script>
 
   <!-- Response Components -->
   <script src="./app/components/responses/responses.module.js"></script>
@@ -41,5 +69,5 @@
   <script src="app/components/opportunities/opportunities.factory.js"></script>
 
 
-  </body>
+    </body>
   </html>
