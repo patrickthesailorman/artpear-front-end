@@ -3,8 +3,8 @@
     .module('artPearApp', [
       'ngResource',
       'ui.router',
-      'artists'
-      // 'seekers'
+      'artists',
+      'responses'
     ])
     .constant('API_URL', 'https://artpear-api.herokuapp.com/api/');
 
