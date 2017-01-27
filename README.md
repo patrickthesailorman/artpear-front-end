@@ -7,9 +7,12 @@ Middelware: Express, Passport, CORS
 
 General approach:  
 We created our ERD  and wireframes on Draw.io and stored in Google Drive  
-  [Link to ERD](https://drive.google.com/file/d/0BzvvgvDgOCV6LUtMTHF2TmpTdjA/view?usp=sharing)
-  [Link to Wireframes](https://drive.google.com/file/d/0BzvvgvDgOCV6TUtSQ2RlMXZhNjQ/view?usp=sharing)
-We manged our project with Trello.
+  [Link to ERD](https://drive.google.com/file/d/0BzvvgvDgOCV6LUtMTHF2TmpTdjA/view?usp=sharing)  
+  
+  [Link to Wireframes](https://drive.google.com/file/d/0BzvvgvDgOCV6TUtSQ2RlMXZhNjQ/view?usp=sharing)  
+  
+We manged our project with Trello.  
+
   [User Stories at Trello](https://trello.com/wdiproject39)
   
 We tried to take a minimalist approach, to contain scope creep, and to ensure we had a working example that met the basic requirements. Also that it was built in a way that would be easily scalable and that we could build it app and add more to it later.
