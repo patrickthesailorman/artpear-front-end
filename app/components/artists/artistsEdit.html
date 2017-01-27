@@ -1,7 +1,6 @@
 <div class="row form-size">
-  <div class="right">
-
-    <form class="center card col s12 m9 l9" data-ng-submit="updateArtist()">
+  <div class="col s12 m12 l12">
+    <form class="card col s12 m9 l9" data-ng-submit="updateArtist()">
       <div class="card-content">
       <input type="text" data-ng-model="artist.firstName" placeholder="{{artist.firstName}}" />
       <input type="text" data-ng-model="artist.lastName" placeholder="Last name..." />
@@ -10,6 +9,9 @@
       <input type="password" data-ng-model="artist.password" placeholder="Password..." />
       <input class="btn green" type="submit" value="Save Changes" />
     </form>
+    <a href="#/artists/{{artist._id}}/delete">
+      <button class="btn red" >Delete {{artist.firstName}}'s profile</button>
+    </a>
 
     <h4>Edit Your Portfolio</h4>
     <div ng-repeat="piece in artist.pieces track by $index">
@@ -17,7 +19,7 @@
         <p>
           Title: {{piece.title}}
         </p>
-        <img ng-show="piece.photoUrl" ng-src="{{piece.photoUrl}}" alt="">
+        <img ng-show="piece.photoUrl" ng-src="{{piece.photoUrl}}" class="photo-sizer">
         <p ng-show="piece.description">
           Description: {{piece.description}}
         </p>
@@ -41,6 +43,6 @@
       <input type="text" data-ng-model="piece.photoUrl" placeholder="photo URL..."/>
       <input type="submit" class="btn blue" value="Add Piece">
       </form>
-    </div>
+
   </div>
 </div>
