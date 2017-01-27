@@ -7,13 +7,12 @@
         <div ng-show="piece.photoUrl">
           <h3>My Portfolio</h3>
           <div ng-repeat="pieces in artist">
-
-            <img ng-show="" ng-src="{{pieces}}" alt="">
+            <img  ng-src="{{pieces}}" alt="">
           </div>
         </div>
         <div >
           <a href="#/artists/{{artist._id}}/edit"><button class="btn green">Edit My Profile</button></a>
-          <a href="#/artists/{{artist._id}}/edit"><button class="btn blue" >Add to my Portfolio</button></a>
+          <a href="#/artists/{{artist._id}}/edit"><button class="btn blue" ng-click="portfolio">Add to my Portfolio</button></a>
           <!-- <div data-ng-include="'/app/components/artists/_form.html'"></div> -->
         </div>
     </div>
