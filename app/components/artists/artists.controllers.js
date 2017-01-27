@@ -27,9 +27,17 @@
         }
 
         function artistsEditCtrl($scope, $state, $stateParams, ArtistsFactory){
+
           $scope.updateArtist = function() {
             $scope.artist.$update(function() {
               $state.go('artistsShow', {id: $scope.artist._id});
+            });
+          };
+
+          $scope.addPiece = function() {
+            $scope.artist.pieces.push($scope.piece);
+            $scope.artist.$update(function() {
+              $scope.piece = {};
             });
           };
 
