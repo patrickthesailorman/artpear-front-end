@@ -1,3 +1,12 @@
-<div >
-    <p ng-repeat="opportunity in opportunities">{{opportunity}}</p>
+<div class="nav-adjust ">
+    <div class=" profile "  ng-repeat="opportunity in opportunities">
+      <div class="card min-height">
+        <div class="row">
+          <img class="profile-pear left col s2 m4 l4"src="app/public/img/artPear-Pear.svg">
+          <h3 class="left col s8">{{opportunity.firstName}}  {{opportunity.lastName}}</h3>
+          <br/>
+          <p class="description left col s8">{{opportunity.bio}}</p>
+        </div>
+      </div>
+    </div>
 </div>
