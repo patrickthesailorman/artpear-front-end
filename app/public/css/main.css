@@ -112,3 +112,6 @@ box-shadow: 1px 1px #333; }
 .padding-bottom{
   margin-bottom:25px;
 }
+body {
+  background-color: #8cba6e;
+}
