@@ -6,18 +6,21 @@
       <h2 class="">{{artist.firstName}}  {{artist.lastName}}</h2>
 
       <p class="description col s12 m6 l6 center">{{artist.bio}}</p>
-
+        <hr/>
           <h3>My Portfolio</h3>
           <div ng-repeat="piece in artist.pieces track by $index">
-            <p>
-              Title: {{piece.title}}
-            </p>
-            <img ng-show="piece.photoUrl" ng-src="{{piece.photoUrl}}" alt="">
-            <p ng-show="piece.description">
-              Description: {{piece.description}}
-            </p>
+            <div class="card">
+              <p>
+                Title: {{piece.title}}
+              </p>
+              <img ng-show="piece.photoUrl" ng-src="{{piece.photoUrl}}" class="photo-sizer">
+              <p ng-show="piece.description">
+                Description: {{piece.description}}
+              </p>
+            </div>
           </div>
           <a href="#/artists/{{artist._id}}/edit"><button class="btn green">Edit My Profile</button></a>
+
     </div>
   </div>
 </div>

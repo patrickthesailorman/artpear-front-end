@@ -3,6 +3,10 @@
   margin: 20px;
   background-color: #FFF2E0; }
 
+  body {
+    background-color: #beddd1;
+  }
+
 .nav-logo {
   height: 80px;
   margin-top: 5px;
@@ -85,6 +89,7 @@ box-shadow: 1px 1px #333; }
 
 .form-size{
   margin-top: 100px;
+  margin-left: 100px;
 }
 
 .profile{
@@ -112,6 +117,8 @@ box-shadow: 1px 1px #333; }
 .padding-bottom{
   margin-bottom:25px;
 }
-body {
-  background-color: #8cba6e;
+
+
+.photo-sizer{
+  width:300px;
 }
