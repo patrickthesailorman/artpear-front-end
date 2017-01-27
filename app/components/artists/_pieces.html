@@ -1,0 +1,9 @@
+<div ng-repeat="piece in artist.pieces">
+  <p>
+    Title: {{piece.description}}
+  </p>
+  <img ng-show="piece.photoUrl" ng-src="{{piece.photoUrl}}" alt="">
+  <p>
+    Description: {{piece.description}}
+  </p>
+</div>

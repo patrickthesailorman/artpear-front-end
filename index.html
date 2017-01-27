@@ -41,6 +41,7 @@
         </nav>
       </div>
       <!-- ///////// END NAV BAR /////////-->
+
     <div class="nav-adjust">
 
       <div><a class="waves-effect waves-light btn left log-in blue" href="#/artists/register">Log In as an Artist</a></div>
@@ -48,12 +49,14 @@
 
     </div>
 
+
       <div ui-view></div>
 
   <!-- script file -->
   <script src="app/public/js/script.js"></script>
   <!-- Main components -->
-  <script src="/app/app.module.js"></script>
+  <script src="app/components/app/app.module.js"></script>
+  <script src="app/components/app/app.routes.js"></script>
 
    <!-- Artist Components -->
   <script src="app/components/artists/artists.module.js"></script>

@@ -8,12 +8,15 @@
       <input type="text" data-ng-model="artist.email" placeholder="Email..." />
       <input type="text" data-ng-model="artist.bio" placeholder="Bio...">
       <input type="password" data-ng-model="artist.password" placeholder="Password..." />
-      <h4>Add work to your portfolio</h4>
+      <input class="btn green" type="submit" value="Save Changes" />
+    </form>
+    <h4>Add work to your portfolio</h4>
+    <div data-ng-include="'/app/components/artists/_pieces.html'"></div>
+    <form class="center card col s12 m9 l9" data-ng-submit="addPiece()">
       <input type="text" data-ng-model="piece.title" placeholder="Title..." />
       <input type="text" data-ng-model="piece.description" placeholder="Description..."/>
       <input type="text" data-ng-model="piece.photoUrl" placeholder="photo URL..."/>
       <input type="submit" class="btn blue" value="Add Item">
-      <input class="btn green" type="submit" value="Save Changes" />
       </form>
     </div>
   </div>
