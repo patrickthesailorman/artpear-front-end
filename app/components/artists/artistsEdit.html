@@ -1,7 +1,14 @@
-<form data-ng-submit="updateArtist()">
-  <input type="text" data-ng-model="artist.firstName" placeholder="{{artist.firstName}}" />
-  <input type="text" data-ng-model="artist.lastName" placeholder="Last name..." />
-  <input type="text" data-ng-model="artist.email" placeholder="Email..." />
-  <input type="password" data-ng-model="artist.password" placeholder="Password..." />
-  <input type="submit" value="Save Changes" />
-</form>
+<div class="row form-size">
+  <div class="right">
+
+    <form class="center card col s12 m8 l8" data-ng-submit="updateArtist()">
+      <div class="card-content">
+      <input type="text" data-ng-model="artist.firstName" placeholder="{{artist.firstName}}" />
+      <input type="text" data-ng-model="artist.lastName" placeholder="Last name..." />
+      <input type="text" data-ng-model="artist.email" placeholder="Email..." />
+      <input type="password" data-ng-model="artist.password" placeholder="Password..." />
+      <input class="btn" type="submit" value="Save Changes" />
+    </div>
+    </form>
+  </div>
+</div>

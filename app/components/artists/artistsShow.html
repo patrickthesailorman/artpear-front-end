@@ -1,22 +1,20 @@
-<div class="nav-adjust row">
-  <div class="col m1 l1"></div>
-
-  <div class="card col s12 m10 l10 artist-profile center">
-    <div class="card-content">
-      <img class="profile-pear"src="app/public/img/artPear-Pear.svg">
+<div class="nav-adjust profile red">
+  <div class="green card">
+    <div class="card-content grey">
+      <img class="profile-pear" src="app/public/img/artPear-Pear.svg">
       <h2 class="">{{artist.firstName}}  {{artist.lastName}}</h2>
-      <p class="description">
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid nulla porro ratione ex, ab recusandae obcaecati, aut laudantium voluptate quaerat dolor, veritatis facere? Mollitia qui voluptatibus molestiae, sequi eos at!</p>
+      <p class="description">{{artist.bio}}</p>
+        <div ng-show="piece.photoUrl">
+          <h3>My Portfolio</h3>
+          <div ng-repeat="pieces in artist">
 
-      <h3>My portfolio of work</h3>
-        <div ng-repeat="pieces in artist">
-          <div ng-show="piece.photoUrl">
             <img ng-show="" ng-src="{{pieces}}" alt="">
           </div>
         </div>
-        <div ng-show=""> when active session == this portfolio
-          <button ng-click="">Edit My Portfolio</button>
-          <div data-ng-include="'/app/components/artists/_form.html'"></div>
+        <div >
+          <a href="#/artists/{{artist._id}}/edit"><button class="btn green">Edit My Profile</button></a>
+          <a href="#/artists/{{artist._id}}/edit"><button class="btn blue" >Add to my Portfolio</button></a>
+          <!-- <div data-ng-include="'/app/components/artists/_form.html'"></div> -->
         </div>
     </div>
   </div>
