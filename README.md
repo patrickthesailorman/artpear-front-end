@@ -22,7 +22,7 @@ unsolved problems or major hurdles:
 
 Installation instructions:
 - [Back end deployed on Heroku](https://artpear-api.herokuapp.com/api/)
-- [Front end is on Github pages](https://patrickthesailorman.github.io/artpear-front-end/)
+- [Front end is on Github pages](https://artpear-959b9.firebaseapp.com/)
 
 User stories:
 - Can be found at the Trello link provided above. Oh what the hell, here it is  [User Stories at Trello](https://trello.com/wdiproject39)
