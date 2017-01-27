@@ -1,7 +1,11 @@
-<form data-ng-submit="updateSeeker()">
-  <input type="text" data-ng-model="seeker.firstName" placeholder="First Name..." />
-  <input type="text" data-ng-model="seeker.lastName" placeholder="Last name..." />
-  <input type="text" data-ng-model="seeker.email" placeholder="Email..." />
-  <input type="password" data-ng-model="seeker.password" placeholder="Password..." />
-  <input type="submit" value="Save Changes" />
-</form>
+<div class="row form-size">
+  <div class="card">
+    <form class="card center col s12 m6 l6" data-ng-submit="updateSeeker()">
+      <input type="text" data-ng-model="seeker.firstName" placeholder="First Name..." />
+      <input type="text" data-ng-model="seeker.lastName" placeholder="Last name..." />
+      <input type="text" data-ng-model="seeker.email" placeholder="Email..." />
+      <input type="password" data-ng-model="seeker.password" placeholder="Password..." />
+      <input class="btn bottom-padding" type="submit" value="Save Changes" />
+    </form>
+  </div>
+</div>
