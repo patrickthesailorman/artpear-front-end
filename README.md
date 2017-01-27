@@ -25,7 +25,7 @@ unsolved problems or major hurdles:
   - We Have a great project, with great structure. It's all there for the most part. Not everything is hooked up though. Having some issues with routes, that will be quickly solved. Final touches in styling will do much to bring some beauty to this beast.
 
 Installation instructions:
-- [Back end deployed on Heroku](https://artpear-api.herokuapp.com/api/)
+- [Back end deployed on Heroku](https://artpear-api.herokuapp.com/api/artists)
 - [Front end is on Github pages](https://artpear-959b9.firebaseapp.com/)
 
 User stories:
