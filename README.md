@@ -5,7 +5,7 @@ Technologies:
 Artpear is built with MEAN stack. 
 Middelware: Express, Passport, CORS
 
-General approach: 
+General approach:  
 We created our ERD  and wireframes on Draw.io and stored in Google Drive
   -ERD
       https://drive.google.com/file/d/0BzvvgvDgOCV6LUtMTHF2TmpTdjA/view?usp=sharing
