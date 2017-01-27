@@ -12,7 +12,7 @@
         })
         .state('opportunitiesCreate', {
           url: '/opportunities/create',
-          templateUrl : 'app/components/opportunities/opportunityCreate.html',
+          templateUrl : 'app/components/opportunities/opportunitiesCreate.html',
           controller  : 'opportunitiesCreateCtrl'
         })
         .state('opportunitiesShow', {
