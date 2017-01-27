@@ -10,8 +10,30 @@
       <input type="password" data-ng-model="artist.password" placeholder="Password..." />
       <input class="btn green" type="submit" value="Save Changes" />
     </form>
-    <h4>Add work to your portfolio</h4>
-    <div data-ng-include="'/app/components/artists/_pieces.html'"></div>
+
+    <h4>Edit Your Portfolio</h4>
+    <div ng-repeat="piece in artist.pieces track by $index">
+      <div data-ng-show="!edit">
+        <p>
+          Title: {{piece.title}}
+        </p>
+        <img ng-show="piece.photoUrl" ng-src="{{piece.photoUrl}}" alt="">
+        <p ng-show="piece.description">
+          Description: {{piece.description}}
+        </p>
+        </div>
+        <div data-ng-click="edit = !edit" data-ng-show="!edit" class="btn blue">Edit Piece</div>
+        <div data-ng-show="edit">
+          <form class="center card col s12 m9 l9" data-ng-submit="updatePiece()">
+            <input type="text" data-ng-model="piece.title" placeholder="Title..." />
+            <input type="text" data-ng-model="piece.description" placeholder="Description..."/>
+            <input type="text" data-ng-model="piece.photoUrl" placeholder="Photo URL..."/>
+            <input data-ng-click="edit = !edit" type="submit" class="btn blue" value="Save Changes">
+            <div data-ng-click="edit = !edit" class="btn blue">Cancel</div>
+          </form>
+        </div>
+    </div>
+
     <form class="center card col s12 m9 l9" data-ng-submit="addPiece()">
       <input type="text" data-ng-model="piece.title" placeholder="Title..." />
       <input type="text" data-ng-model="piece.description" placeholder="Description..."/>

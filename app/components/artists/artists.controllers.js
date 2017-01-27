@@ -41,6 +41,12 @@
             });
           };
 
+          $scope.updatePiece = function() {
+            $scope.artist.$update(function() {
+              $state.go('artistsEdit', {id: $scope.artist._id});
+            });
+          };
+
           $scope.loadArtist = function() {
             $scope.artist = ArtistsFactory.get({id: $stateParams.id});
           };
