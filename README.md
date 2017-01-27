@@ -1,7 +1,7 @@
 # Artpear
 Artpear is a place where local artist can post their art, skills or services. Seekers can post opportunity information and request artists to display work, photograph or perform at these events. Maybe the opportunity is one-time occasion or a running exposition at a gallery.
 
-Technologies:
+Technologies:  
 Artpear is built with MEAN stack. 
 Middelware: Express, Passport, CORS
 
