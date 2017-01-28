@@ -26,3 +26,10 @@ Installation instructions:
 
 User stories:
 - Can be found at the Trello link provided above. Oh what the hell, here it is  [User Stories at Trello](https://trello.com/wdiproject39)
+
+### Artpear is brought to you by...
+
+|  Patrick McCarty  |  Jesse Ellis  |  Neil Burdick  |
+|  ---  |  ---  |  ---  |
+|![Patrick](https://avatars0.githubusercontent.com/u/23321638?v=3&u=1c1e6f87ec34d86437d0857dfb070247a5f58dea&s=400)|![Jesse](https://avatars1.githubusercontent.com/u/506631?v=3&s=460)|![Neil](https://avatars3.githubusercontent.com/u/23345675?v=3&s=460)|
+|  [patrickthesailorman](https://github.com/patrickthesailorman)| [jtellis](https://github.com/jtellis)| [neilburd](https://github.com/neilburd)|
