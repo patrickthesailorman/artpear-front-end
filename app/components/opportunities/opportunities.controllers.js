@@ -19,7 +19,7 @@
 
         function opportunitiesCreateCtrl($scope, $state, $stateParams, OpportunitiesFactory){
           $scope.opportunity = new OpportunitiesFactory();
-          $scope.registerOpportunity = function() {
+          $scope.createOpportunity = function() {
             $scope.opportunity.$save(function() {
               $state.go('opportunitiesShow', {id: $scope.opportunity._id});
             });
