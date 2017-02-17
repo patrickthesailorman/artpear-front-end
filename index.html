@@ -15,6 +15,7 @@
       <link rel="stylesheet" href="app/public/css/materialize.min.css">
       <!-- Google fonts -->
       <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!-- jQuery files -->
       <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
       <!-- Angular files -->
@@ -34,7 +35,13 @@
         <nav class="nav indigo">
           <div class="nav-wrapper container">
             <a href="#/" class="brand-logo"><img class="nav-logo" src="app/public/img/artPear-Logo.svg" alt="art pear logo"></a>
+            <a href="#" data-activities="mobile" class="button-collapse"><i class="material-icns">menu</i></a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="#/artists">View All Artists</a></li>
+              <li><a href="#/opportunities">View All Opportunities</a></li>
+              <li><a href="#/seekers">View All Seekers</a></li>
+            </ul>
+            <ul class="side-nav" id="mobile">
               <li><a href="#/artists">View All Artists</a></li>
               <li><a href="#/opportunities">View All Opportunities</a></li>
               <li><a href="#/seekers">View All Seekers</a></li>
